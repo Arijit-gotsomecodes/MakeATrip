@@ -1,9 +1,9 @@
 import express, { Request, Response } from "express";
-import User from "../models/user";
 import jwt from "jsonwebtoken";
 import { check, validationResult } from "express-validator";
+import User from "../models/User";
 
-const router = express.Router();
+const router = express.Router(  );
 
 // /api/users/register
 router.post("/register", [
